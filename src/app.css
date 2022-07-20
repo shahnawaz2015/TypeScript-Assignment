@@ -1,0 +1,53 @@
+#user-input .btn {
+  min-width: 120px;
+}
+#createNewUser {
+  position: absolute;
+  top: 13px;
+  right: -12px;
+}
+.actions-width {
+  min-width: 80px;
+}
+.loading {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading .load-data {
+  min-width: 200px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+#userForm {
+  display: none;
+  background: rgba(0, 0, 0, 0.9);
+}
+#user-input .btn.close-btn {
+  min-width: inherit;
+  opacity: 0.6;
+  padding: 0 8px;
+  font-size: 18px;
+}
+#user-input .btn.close-btn:hover {
+  opacity: 1;
+}
+#errorInput {
+  display: none;
+}
+#errorInput.show {
+  display: block;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 700px;
+  }
+}
